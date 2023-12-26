@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  identity:
+    build: ./AuthDemo.Token
+    ports:
+      - "5001:80"
+  demo:
+    build: ./AuthDemo.Api
+    ports:
+      - "5002:80"
